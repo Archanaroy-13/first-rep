@@ -1,0 +1,162 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width:100vw;
+    border: 2px solid red;
+    background-image: url('images/login\ background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: 70%;
+    width:80%;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 20px black;
+    backdrop-filter: blur(5px);
+    border-radius: 84% 16% 86% 14% / 0% 100% 0% 100%  ;
+    display: flex;
+}
+
+section .loginbox{
+    height: 100%;
+    width: 60%;
+    /* border: 2px solid yellow; */
+}
+section .registerbox{
+    height: 100%;
+    width: 40%;
+    /* border: 2px solid yellow; */
+}
+
+
+section .loginbox h2{
+    font-size: 2.3rem;
+    font-family: cursive;
+    position:relative;
+    left:15px;
+}
+section .loginbox::after{
+    content: "";
+    position: absolute;
+    top:50px;
+    left:580px;
+    height: 340px;
+    width: 1px;
+    background-color: black;
+    box-shadow: 0 0 10px black;
+}
+
+section .loginbox .inputbox{
+    height: 250px;
+    width: 500px;
+    /* border: 2px solid red; */
+    position: relative;
+    left:60px;
+}
+
+
+section .loginbox .inputbox input{
+    height: 40px;
+    width: 220px;
+    margin-top: 40px;
+    margin-left: 90px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+}
+section .loginbox .inputbox .ico{
+    color:black;
+    font-size: 1.5rem;
+    position: relative;
+    top:5px;
+}
+section .loginbox .inputbox label{
+    font-size: 1.4rem;
+    color: black;
+    position: relative;
+    left:60px;
+}
+
+section .loginbox .inputbox button{
+    font-family: cursive;
+    height: 40px;
+    width: 160px;
+    font-size: 1.1rem;
+    border-radius: 2px;
+    position: relative;
+    left:290px;
+    top:40px;
+    border: none;
+    background: transparent;
+    background-color: black;
+    color: white;
+    opacity: .7;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+section .loginbox .inputbox button:hover{
+    transform: scaleX(1.1);
+}
+
+section .loginbox .label{
+    color:white;
+    font-size: 1.2rem;
+    font-family: cursive;
+    position: relative;
+    top:30px;
+    left:110px;
+}
+section .loginbox #remember{
+    position: relative;
+    left:110px;
+    top:30px;
+}
+
+
+section .registerbox h2{
+    font-size: 1.8rem;
+    font-family: cursive;
+    position:relative;
+    left:15px;
+}
+section .registerbox .value-box{
+    height: 200px;
+    width:250px;
+    /* border: 2px solid red; */
+    position: relative;
+    top:30px;
+    left:20px;
+    overflow: hidden;
+}
+
+section .registerbox button{
+    font-family: cursive;
+    height: 35px;
+    width: 190px;
+    font-size: 1.1rem;
+    border-radius: 2px;
+    position: relative;
+top:60px;
+left:160px;
+    border: none;
+    background: transparent;
+    background-color: black;
+    color: white;
+    opacity: .7;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+section .registerbox button:hover{
+    transform: scaleX(1.1);
+}
